@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/core"/>
+	<classpathentry exported="true" kind="lib" path="/core/build/libs/gdx-backend-android-1.2.0.jar" sourcepath="C:/Users/RobII/.m2/repository/com/badlogicgames/gdx/gdx-backend-android/1.2.0/gdx-backend-android-1.2.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/core/build/libs/gdx-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/core/build/libs/gdx-freetype-1.2.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

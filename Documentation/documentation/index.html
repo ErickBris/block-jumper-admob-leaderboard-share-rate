@@ -1,0 +1,838 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Block Jumper - Simple and Addictive Arcade Game</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="xtremetom">
+	<meta name="copyright" content="xtremetom">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-03-19T15:28:14+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_40.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-block-jumper">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#file_structure" title="File Structure">File Structure</a></li>
+			<li><a href="#game_name" title="Game Name">Game Name</a></li>
+			<li><a href="#font_settings" title="Font Settings">Font Settings</a></li>
+			<li><a href="#element_settings" title="Element Settings">Element Settings</a></li>
+			<li><a href="#button_settings" title="Button Settings">Button Settings</a></li>
+			<li><a href="#game_speed" title="Game Speed">Game Speed</a></li>
+			<li><a href="#share_text" title="Share Text">Share Text</a></li>
+			<li><a href="#google_settings" title="Google Settings">Google Settings</a></li>
+			<li><a href="#package_naming" title="Package Naming">Package Naming</a></li>
+			<li><a href="#general_troubleshooting" title="General Troubleshooting">General Troubleshooting</a></li>
+			<li><a href="#mac_issues" title="Mac Issues">Mac Issues</a></li>
+			<li><a href="#contact_me" title="Contact Me">Contact Me</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright xtremetom 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Block Jumper</h1>
+	<h2>Simple and Addictive Arcade Game</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	
+	<li>by: xtremetom</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#119;&#105;&#108;&#108;&#105;&#97;&#109;&#115;&#111;&#110;&#46;&#116;&#46;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#119;&#105;&#108;&#108;&#105;&#97;&#109;&#115;&#111;&#110;&#46;&#116;&#46;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+<h2>
+	Importing the Game</h2>
+<p>
+	This step is fairly simple but please be aware that although importing is usually the fastest option, Eclipse can sometimes make import errors. I have included a troubleshooting section below incase that happens.</p>
+<p>
+	&nbsp;</p>
+<h2>
+	EXTREMELY IMPORTANT</h2>
+<div class="alert">
+	Import as&nbsp;<strong>EXISTING PROJECTS INTO WORKSPACE</strong></div>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 1: &nbsp;Unzip the Game</h5>
+<p>
+	Unzip the_game.zip to a location you can easily find.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 2: New Eclipse Workspace</h5>
+<p>
+	Open Eclipse and nice fresh workspace.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 3: Import the Game</h5>
+<p>
+	Select the following</p>
+<p>
+	File &gt;&gt; Import &gt;&gt; General &gt;&gt; Exisiting Projects into Workspace</p>
+<p>
+	<img alt="" src="assets/images/image_27.png"></p>
+<p>
+	Click browse and navigate to the unpacked game directory. Then copy the following settings and hit finish:</p>
+<p>
+	<img alt="" src="assets/images/image_33.png"></p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h2>
+	Troubleshooting</h2>
+<p>
+	Sadly the above steps do not always occur without error. But do not worry. The most common error is this:</p>
+<p>
+	<img alt="" src="assets/images/image_13.png"></p>
+<p>
+	&nbsp;</p>
+<p>
+	To fix this issue please follow these steps:</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 1: Delete the Faulty Files</h5>
+<p>
+	Firt off we are going to delete the faulty files like this:</p>
+<p>
+	<img alt="" src="assets/images/image_5.png"></p>
+<p>
+	This gives us this screen:</p>
+<p>
+	<img alt="" src="assets/images/image_36.png"></p>
+<div class="alert alert-error">
+	<strong>Make sure to tick &quot;Delete project content on disk&quot;</strong></div>
+<p>
+	Then click ok.</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 2: Re-Import, Slowly</h5>
+<p>
+	We now re-import the project sections separately and not in bulk, like this:</p>
+<p>
+	<img alt="" src="assets/images/image_10.png"></p>
+<div class="alert alert-info">
+	<strong style="color: rgb(58, 135, 173);">Notice only one section is being imported at a time.</strong></div>
+<p>
+	Repeat this step for each faulty section.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 3: Double Check</h5>
+<p>
+	When you are done, your eclipse structure should look like this:</p>
+<p>
+	<img alt="" src="assets/images/image_22.png"></p>
+<p>
+	All errors are gone.</p>
+</section>
+<section id="file_structure">
+	<div class="page-header"><h3>File Structure</h3><hr class="notop"></div>
+<h2>
+	File Structure</h2>
+<p>	Everything you will need or want to change can be found in the Android folder:</p>
+<p>	<img alt="" src="assets/images/image_35.png"></p>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h3>
+	Game Settings</h3>
+<p>	The game settings file is found here:</p>
+<div class="alert alert-info">
+	<strong>Android &gt;&gt; res &gt;&gt; values &gt;&gt; strings.xml</strong></div>
+<p>	<img alt="" src="assets/images/image_11.png"></p>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h3>
+	Images</h3>
+<p>	All image files, including your logo are found here:</p>
+<div class="alert alert-info">
+	<strong>Android &gt;&gt; assets &gt;&gt; images</strong></div>
+<p>	<img alt="" src="assets/images/image_23.png" style="width: 529px; height: 502px;"></p>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h3>
+	Sounds</h3>
+<p>	All sound files are found here:</p>
+<div class="alert alert-info">
+	<strong>Android &gt;&gt; assets &gt;&gt; sounds</strong></div>
+<p>	<img alt="" src="assets/images/image_6.png"></p>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h3>
+	Fonts</h3>
+<p>	All fonts are found here</p>
+<div class="alert alert-info">
+	<strong>Android &gt;&gt; assets &gt;&gt; fonts</strong></div>
+<p>	<img alt="" src="assets/images/image_9.png"></p>
+</section>
+<section id="game_name">
+	<div class="page-header"><h3>Game Name</h3><hr class="notop"></div>
+<h2>
+	Changing the Game Name</h2>
+<p>
+	To change the game name, navigate to the strings.xml and find this section;</p>
+<p>
+	<img alt="" src="assets/images/image_21.png"></p>
+<div class="alert alert-info">
+	Depending on the game you have purchased it may look a little different.</div>
+<p>
+	&nbsp;</p>
+<p>
+	Now simply change the app_name to the desired game name value.</p>
+<p>
+	You can also change the subTitle to the desired values.</p>
+</section>
+<section id="font_settings">
+	<div class="page-header"><h3>Font Settings</h3><hr class="notop"></div>
+<h2>
+	Changing the Fonts</h2>
+<div class="alert alert-info">
+	<strong>Note</strong>; Line numbers may vary slightly depending on the version of the game.</div>
+<p>
+	Please navigate to strings.xml and find this section;</p>
+<p>
+	<img alt="" src="assets/images/image_8.png" style="width: 481px; height: 318px;"></p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Changing the Font Type</h3>
+<p>
+	You can change <strong>titleTitleFontFile</strong> to name of your desired font, you can do the same for <strong>subTitleFontFile</strong>. But you must make sure that the names match the files you add to the game.</p>
+<p>
+	Add your new font files in the font folder:</p>
+<p>
+	<img alt="" src="assets/images/image_20.png"></p>
+<div class="alert alert-error">
+	<strong>Crash Warning</strong>; If the font names do not match, the game will crash.</div>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Changing Font Size</h3>
+<p>
+	Simply change <strong>titleTitleFontSize</strong> and <strong>subTitleFontSize</strong> to the desired values.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Changing Font Colors</h3>
+<p>
+	Simply change&nbsp;<strong>mainTitleColor</strong>&nbsp;and&nbsp;<strong>subTitleColor</strong>&nbsp;to the desired hex colors.</p>
+<p>
+	Hex colors can be found here; <a href="http://www.color-hex.com/" target="_blank">http://www.color-hex.com/&nbsp;</a></p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="element_settings">
+	<div class="page-header"><h3>Element Settings</h3><hr class="notop"></div>
+<h2>
+	Change Game Elements</h2>
+<div class="alert alert-info">
+	<strong style="color: rgb(58, 135, 173);">Note</strong><span style="color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);">; Line numbers may vary slightly depending on the version of the game.</span></div>
+<p>
+	All game element settings can be found in the strings.xml, find this section;</p>
+<p>
+	<img alt="" src="assets/images/image_37.png" style="width: 461px; height: 468px;"></p>
+<p>
+	When using your custom images please replace the images found in assets &gt;&gt; image with your own versions. Make sure to keep the names the same:</p>
+<p>
+	<img alt="" src="assets/images/image_15.png"></p>
+<p>
+	&nbsp;</p>
+<h3>
+	VERY IMPORTANT:</h3>
+<div class="alert alert-error">
+	<strong>Keep image names the same</strong>. Changing them will cause crashes</div>
+<h3>
+	&nbsp;</h3>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Hero Settings</h3>
+<p>
+	<strong>heroColor;</strong> use any hex color you like.</p>
+<p>
+	<strong>heroSize;</strong> can be increased of decreased by changing this value.</p>
+<p>
+	<strong>useHeroImage</strong>; true or false you can replace the hero.png image with your own hero.png</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Object Settings</h3>
+<p>
+	<strong>objectColor </strong>can be set to any desired hex color.</p>
+<p>
+	<strong>objectSize</strong> can be altered by changing this value.</p>
+<p>
+	<strong>useObjectImage</strong>; true or false you can replace the hero.png image with your own object.png</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Ground Color</h3>
+<p>
+	<strong>groundColor</strong> can use any hex color and alters the game ground.</p>
+<p>
+	<strong>useWallImage</strong>; true or false you can replace the hero.png image with your own wall.png</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Backgrounds</h3>
+<p>
+	<strong>splashBackgroundColor</strong> can use any hex color and changes the color of the splash screen</p>
+<p>
+	<strong>gameBackgroundColor </strong>can use ant hex color and changes the game&#39;s background color</p>
+<p>
+	<strong>useBackgroundImage</strong>; true or false you can replace the hero.png image with your own bg.png</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Particle Colors</h3>
+<p>
+	<strong>heroParticleColor</strong>; use any hex color you like to change the particle color of the hero</p>
+<p>
+	<strong>groundParticleColor</strong>; use any hex color you like to change the particle color of the ground</p>
+</section>
+<section id="button_settings">
+	<div class="page-header"><h3>Button Settings</h3><hr class="notop"></div>
+<h2>
+	Changing the Game Buttons</h2>
+<div class="alert alert-info">
+	<strong style="color: rgb(58, 135, 173);">Note</strong><span style="color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);">; Line numbers may vary slightly depending on the version of the game.</span></div>
+<p>	The settings are found in strings.xml, find this section;</p>
+<p>	<img alt="" src="assets/images/image_16.png" style="width: 462px; height: 391px;"></p>
+<p>	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Button Background Color</h3>
+<p>	<strong>buttonBackgroundColor</strong> can use any hex color and changes the background color of all buttons</p>
+<p>	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Icon Color</h3>
+<p>	Each icon is clearly named and can use and hex color.</p>
+</section>
+<section id="game_speed">
+	<div class="page-header"><h3>Game Speed</h3><hr class="notop"></div>
+<h2>
+	Changing Game Speed</h2>
+<p>
+	The game settings allow you to change the game speed and speed increments.</p>
+<div class="alert alert-info">
+	<strong>Note</strong>; Line numbers may vary slightly depending on the version of the game.</div>
+<p>
+	Controlled via strings.xml, find this section;</p>
+<p>
+	<img alt="" src="assets/images/image_38.png"></p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Game Speed</h3>
+<p>
+	Simply increase the speed for a harder game, decrease for any easier game.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Game Speed Increments</h3>
+<p>
+	This controls the frequency of the speed increase. The default is set at 20. This means ever 20 points the game speed will increase.</p>
+<p>
+	Set this value to anything you want. High numbers mean an easier game, low numbers means the game speed will get faster with low scores.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Game Speed Increment Increase</h3>
+<p>
+	This sets the percentage speed increase per increment. The default is set to 5, that means every increment will increase game speed by 5%.</p>
+<p>
+	Higher numbers mean a harder game, lower numbers mean an easier game.</p>
+</section>
+<section id="share_text">
+	<div class="page-header"><h3>Share Text</h3><hr class="notop"></div>
+<h2>
+	Changing Share Text</h2>
+<p>	All handled via strings.xml, find this section;</p>
+<p>	<img alt="" src="assets/images/image_32.png"></p>
+<p>	&nbsp;</p>
+<p>	There are three variables you can use:</p>
+<ol>
+	<li>		<strong>@score@ </strong>displays the players highest score.</li>
+	<li>		<strong>@appName@ </strong>displays the game&#39;s name.</li>
+	<li>		<strong>@gameUrl@</strong> displays the game&#39;s url as found in the play store.</li>
+</ol>
+</section>
+<section id="google_settings">
+	<div class="page-header"><h3>Google Settings</h3><hr class="notop"></div>
+<h2>
+	Changing the Google Settings</h2>
+<div class="alert alert-info">
+	<strong style="color: rgb(58, 135, 173);">Note</strong><span style="color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);">; Line numbers may vary slightly depending on the version of the game.</span></div>
+<p>
+	All handled via strings.xml, find this section;</p>
+<p>
+	<img alt="" src="assets/images/image_25.png" style="width: 664px; height: 333px;"></p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Setting up Google Play for Your App</h3>
+<p>
+	Google have already created a comprehensive tutorial on the subject, it can be found here:&nbsp;</p>
+<p>
+	<a href="https://developers.google.com/games/services/console/enabling" target="_blank">https://developers.google.com/games/services/console/enabling</a></p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Setting the app_id</h3>
+<p>
+	Simply add your app_id as supplied by Google to <strong>app_id</strong></p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Setting Leaderboard</h3>
+<p>
+	Add your leaderboard id supplied by Google to <strong>leaderboard_leaders</strong></p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Admob Id</h3>
+<p>
+	admob_id is your admob is supplied by Google</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Interstitial Ad Id</h3>
+<p>
+	InterstitialAd_unit_id is the ad id of your interstitial ad as supplied by Google</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h3>
+	&nbsp;</h3>
+<h3>
+	Interstitial Ad Frequency</h3>
+<p>
+	InterstitialAd_frequency sets the frequency of interstitial ad display. A value of 3 means 1 in every 3 deaths will show these ads. A value of 1, means every death will show these ads.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h3>
+	Banner Placement</h3>
+<p>
+	Toggle banner place on top or bottom, you can not have both and the system will default to bottom in the event that both values are set to true.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Admob Interstitial On</h3>
+<p>
+	Toggle interstitial ads on or off.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="package_naming">
+	<div class="page-header"><h3>Package Naming</h3><hr class="notop"></div>
+<h2>
+	Renaming the Game Package</h2>
+<p>	In order to publish your game on Google play, you will need to rename the game package.</p>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h5>
+	Step 1: Edit Manifest</h5>
+<p>	First we rename the pack in the manifest, navigate to the AndroidManifest.xml;</p>
+<p>	<img alt="" src="assets/images/image_30.png"></p>
+<p>	&nbsp;</p>
+<p>	We then rename the package;</p>
+<p>	<img alt="" src="assets/images/image_31.png"></p>
+<p>	You can set this value to anything you like but the normal naming format is;</p>
+<div class="alert alert-info">
+	<strong>com.YourWebSite.GameName</strong></div>
+<p>	&nbsp;</p>
+<hr>
+<p>	&nbsp;</p>
+<h5>
+	Step 2: Rename Folders</h5>
+<p>	We now need to rename the package folder name, simply right click on the main package and select as below;</p>
+<p>	<img alt="" src="assets/images/image_26.png"></p>
+<p>	This will open this window;</p>
+<p>	<img alt="" src="assets/images/image_19.png"></p>
+<p>	Change the name to match your AndroidManifest.xml, copy the setting and click ok.</p>
+<p>	&nbsp;</p>
+</section>
+<section id="general_troubleshooting">
+	<div class="page-header"><h3>General Troubleshooting</h3><hr class="notop"></div>
+<h2>
+	Troubleshooting Common Issues</h2>
+<p>
+	We all make mistakes from time to time. This section is designed to help you out with the more common mistakes that people make when re-skinning.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Font Errors</h3>
+<p>
+	If you get an error that looks like this:</p>
+<p>
+	<img alt="" src="assets/images/image_14.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Reason:</h5>
+<p style="margin-left: 40px;">
+	This error means that that one of the fonts you are using is faulty and missing some data. This is no fault of the game code, this is purely a result of the creator of the font.</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Fix:</h5>
+<p style="margin-left: 40px;">
+	Double check your fonts, see the font settings section.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Editing Errors</h3>
+<p>
+	<img alt="" src="assets/images/image_24.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Reason:</h5>
+<p style="margin-left: 40px;">
+	While editing the strings.xml you have probably broken a small bit of code, like this:</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_17.png"></p>
+<p style="margin-left: 40px;">
+	Notice how to highlighted line has this:</p>
+<div class="alert alert-info" style="margin-left: 40px;">
+	/string&gt;</div>
+<p style="margin-left: 40px;">
+	It should look like this:</p>
+<div class="alert alert-info" style="margin-left: 40px;">
+	<span style="color: rgb(58, 135, 173); background-color: rgb(217, 237, 247);">&lt;/string&gt;</span></div>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Fix:</h5>
+<p style="margin-left: 40px;">
+	Simply add the missing &quot;&lt;&quot;</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	File Replacement Errors</h3>
+<p>
+	<img alt="" src="assets/images/image_28.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Reason:</h5>
+<p style="margin-left: 40px;">
+	While changing the logo.png for your own logo you probably uploaded a logo with a different name:</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_39.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Fix:</h5>
+<p style="margin-left: 40px;">
+	Make sure your logo is logo.png</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Color Editing Errors</h3>
+<p>
+	<img alt="" src="assets/images/image_12.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Reason:</h5>
+<p style="margin-left: 40px;">
+	While editing colors you probably did not add the color hex code correctly:</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_34.png"></p>
+<p style="margin-left: 40px;">
+	Notice how the highlighted line is missing the #. The same error would occur if the hex color value was less that 7 characters.</p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Fix:</h5>
+<p style="margin-left: 40px;">
+	Double check your color codes.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	Google Info Errors</h3>
+<p>
+	<img alt="" src="assets/images/image_29.png"></p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Reason:</h5>
+<p style="margin-left: 40px;">
+	While adding your Google data you probably made a mistake:</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_7.png"></p>
+<p style="margin-left: 40px;">
+	Notice how I have forced this error by replacing all Google ids with &quot;x&quot;.</p>
+<p>
+	&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	Fix:</h5>
+<p style="margin-left: 40px;">
+	Doubl check your Google info.</p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	&nbsp;</p>
+<h3>
+	General Errors</h3>
+<p>
+	If you run into an error not listed here, the chances are that a mistake was made while completing the strings.xml file.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h5>
+	Fix:&nbsp;</h5>
+<p>
+	Double check your strings.xml.</p>
+</section>
+<section id="mac_issues">
+	<div class="page-header"><h3>Mac Issues</h3><hr class="notop"></div>
+<h2>
+	Issues for Mac Users</h2>
+<p>
+	When importing on a Mac you may notice an issue with the android project folder and a few libraries. Do not worry there is a very simple fix.</p>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 1:</h5>
+<p>
+	Right click on Android and select properties at the bottom. This will open a new dialog window. Click on Android on the left. That should display this:&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="width: 806px; height: 661px;"></p>
+<p>
+	On your screen the green tick on the libraries will probably be red crosses, we will fix that :)</p>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 2:</h5>
+<p>
+	Click each library (they will appear with a cross for you) and remove them:</p>
+<p>
+	<img alt="" src="assets/images/image_3.png" style="width: 589px; height: 285px;"></p>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 3:</h5>
+<p>
+	The library viewer should now be empty. Click add and select one of the listed libraries. Repeat this for both libraries in the list:</p>
+<p>
+	<img alt="" src="assets/images/image_4.png"  ></p>
+<p>
+	&nbsp;</p>
+<h5>
+	Step 4:</h5>
+<p>
+	Once added it the library list should now look like this:</p>
+<p>
+	<img alt="" src="assets/images/image_1.png"></p>
+<p>
+	Click <strong>Apply</strong> then <strong>Ok</strong></p>
+</section>
+<section id="contact_me">
+	<div class="page-header"><h3>Contact Me</h3><hr class="notop"></div>
+<h2>
+	Contact Me</h2>
+<p>
+	I live in UK, so I am available during normal GMT working hours and sometimes past that. But dont message me at 3am GMT and expect an answer in 10 minutes :) I will probably be asleep.</p>
+<p>
+	&nbsp;</p>
+<h3>
+	Skype:</h3>
+<p>
+	t.p.williamson</p>
+<p>
+	my skype picture, to help you find me:</p>
+<p>
+	<img alt="" src="assets/images/image_18.png"></p>
+<p>
+	&nbsp;</p>
+<h3>
+	Email:</h3>
+<p>
+	&#119;&#105;&#108;&#108;&#105;&#97;&#109;&#115;&#111;&#110;&#46;&#116;&#46;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
+<p>
+	&nbsp;</p>
+<h3>
+	Custom Work</h3>
+<p>
+	If you need any custom work like code or re-skins please contact me.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>
